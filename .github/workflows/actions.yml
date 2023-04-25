@@ -1,6 +1,9 @@
 name: OpenAPI Checks
 on:
- - pull_request
+  pull_request: {}
+  push:
+    branches:
+      - main
 jobs:
  Checks:
    runs-on: ubuntu-latest
