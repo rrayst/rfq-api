@@ -12,7 +12,7 @@ tags:
 paths:
   /rfqs:
     post:
-      operationid: getQuote
+      operationId: getQuote
       tags:
       - RFQ
       description: get a quote
