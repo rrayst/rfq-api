@@ -2,16 +2,20 @@ openapi: '3.0.2'
 info:
   title: API Title
   version: '1.0'
+  contact:
+    email: polley@predic8.de
+  description: Quotation API
 servers:
   - url: https://api.server.test/v1
+tags:
+  - name: RFQ
 paths:
-  /test:
-    get:
-      responses:
-        '200':
-          description: OK
   /rfqs:
     post:
+      operationid: getQuote
+      tags:
+      - RFQ
+      description: get a quote
       requestBody:
         content:
           application/json:
